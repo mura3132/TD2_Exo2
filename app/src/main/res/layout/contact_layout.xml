@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contactLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/contact_shape"
+    android:orientation="vertical"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/nomView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/contactSelected"
+        android:text="Contact Name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/phoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nomView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:text="0793093303"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/phoneView"
+        android:textSize="16sp"
+        android:text="ga_hammas@esi.dz" />
+
+    <CheckBox
+        android:id="@+id/contactSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#3F51B5"
+        android:buttonTint="#4050A0"
+        android:checked="false"
+        android:textColorLink="#3F51B5" />
+
+</RelativeLayout>
